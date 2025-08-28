@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Modern Business Dashboard Design System */
+
+@layer base {
+  :root {
+    /* Background Colors */
+    --background: 210 11% 7%;
+    --foreground: 210 40% 98%;
+    --surface: 217 19% 10%;
+    --surface-elevated: 217 19% 12%;
+
+    /* Card Colors */
+    --card: 217 19% 10%;
+    --card-foreground: 210 40% 98%;
+    --card-header: 217 19% 12%;
+
+    /* Popover Colors */
+    --popover: 217 19% 10%;
+    --popover-foreground: 210 40% 98%;
+
+    /* Brand Colors */
+    --primary: 263 70% 50%;
+    --primary-glow: 263 70% 60%;
+    --primary-foreground: 210 40% 98%;
+
+    /* Business Brand Colors */
+    --iclean: 240 100% 50%;
+    --icandy: 320 100% 70%;
+    --apl: 200 100% 50%;
+    --apmg: 0 100% 60%;
+    --instafund: 120 100% 40%;
+
+    /* Status Colors */
+    --success: 142 76% 36%;
+    --success-glow: 142 76% 46%;
+    --warning: 48 96% 53%;
+    --danger: 0 84% 60%;
+    --danger-glow: 0 84% 70%;
+
+    /* Neutral Colors */
+    --secondary: 217 19% 15%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217 19% 15%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 217 19% 15%;
+    --accent-foreground: 210 40% 98%;
+
+    /* Border & Input */
+    --border: 217 19% 20%;
+    --input: 217 19% 15%;
+    --ring: 263 70% 50%;
+
+    /* Destructive */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    /* Layout */
+    --radius: 0.75rem;
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-success: linear-gradient(135deg, hsl(var(--success)), hsl(var(--success-glow)));
+    --gradient-danger: linear-gradient(135deg, hsl(var(--danger)), hsl(var(--danger-glow)));
+    --gradient-surface: linear-gradient(135deg, hsl(var(--surface)), hsl(var(--surface-elevated)));
+    --gradient-card: linear-gradient(135deg, hsl(var(--card)), hsl(var(--card-header)));
+
+    /* Shadows */
+    --shadow-sm: 0 1px 3px 0 hsl(var(--background) / 0.3);
+    --shadow-md: 0 4px 12px 0 hsl(var(--background) / 0.4);
+    --shadow-lg: 0 10px 30px 0 hsl(var(--background) / 0.5);
+    --shadow-glow: 0 0 30px hsl(var(--primary) / 0.3);
+    --shadow-success: 0 0 20px hsl(var(--success) / 0.2);
+    --shadow-danger: 0 0 20px hsl(var(--danger) / 0.2);
+
+    /* Animations */
+    --transition-fast: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-normal: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Sidebar */
+    --sidebar-background: 217 19% 8%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 263 70% 50%;
+    --sidebar-primary-foreground: 210 40% 98%;
+    --sidebar-accent: 217 19% 12%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 217 19% 15%;
+    --sidebar-ring: 263 70% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
